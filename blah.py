@@ -19,7 +19,14 @@ intradayS = authd_client.intraday_time_series('activities/steps', base_date    =
 f = open('datadumpSteps.json', 'w')
 json.dump(intradayS, f)
  
-intradayH = authd_client.intraday_time_series('activities/heart', base_date    = '2016-03-01', detail_level = '1sec', start_time   = None, end_time     = None)
- 
-f = open('datadumpHeart.json', 'w')
+intradayH = authd_client.intraday_time_series('activities/heart', base_date    = '2016-03-30', detail_level = '1sec', start_time   = None, end_time     = None) 
+f = open('datadumpHeart3-30.json', 'w')
+
+intradayH = authd_client.intraday_time_series('activities/heart', base_date    = '2016-03-29', detail_level = '1sec', start_time   = None, end_time     = None) 
+f = open('datadumpHeart3-29.json', 'w')
+
+intradayH = authd_client.intraday_time_series('activities/heart', base_date    = '2016-03-28', detail_level = '1sec', start_time   = None, end_time     = None) 
+f = open('datadumpHeart3-28.json', 'w')
+
+
 json.dump(intradayH, f)
